@@ -6,10 +6,14 @@ MAINTAINER Rod <rod@protobia.tech>
 ## APT 自动安装 PHP 相关的依赖包,如需其他依赖包在此添加
 RUN apt-get update \
     && apt-get install -y \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
         libmcrypt-dev \
+        libpng12-dev \
         libz-dev \
         git \
         wget \
+        php5-gd \
 
     # 官方 PHP 镜像内置命令，安装 PHP 依赖
     && docker-php-ext-install \
