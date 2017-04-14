@@ -33,8 +33,8 @@ RUN apt-get update \
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash \
 && apt-get install -y nodejs \
 && npm install -g bower \
-&& npm install -g bower-npm-resolver
-# && npm install -g cordova ionic
+&& npm install -g bower-npm-resolver \
+&& npm install -g gulp
 
 
 ##
